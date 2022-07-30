@@ -1,10 +1,11 @@
 
 import './App.css';
+import WrapperComponent from './components/wrapper';
 
 function App() {
   return (
     <div className="App">
-      <h1>Oscar Anillo</h1>
+      <WrapperComponent />
     </div>
   );
 }

@@ -1,38 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  font-family: 'Manrope', sans-serif;
   text-align: center;
+  background: hsl(210, 46%, 95%);
+  height: 100vh;
+  padding-top: 5em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  max-width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img-div {
+  width: 90%;
+  margin: auto;
+  background-image: url("/public/images/drawers.jpg");
+  background-size: cover;
+  height: 230px;
+  border-radius: 5px 5px 0 0; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text-div-one { 
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 1px 100px #818181;
+}
+
+.text-div-one div {
+  width: 80%;
+  margin: auto;
+  padding-top: 1em;
+}
+
+.text-div-one h4 {
+  padding: 1em 0;
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+
+.text-div-one p {
+  font-size: 14px;
+  color: hsl(214, 17%, 51%);
+  line-height: 24px;
+}
+
+.text-div-one .row {
+  width: 100%;
+  margin: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  text-align: left;
+  padding-bottom: .8em;
 }
 
-.App-link {
-  color: #61dafb;
+.row .one {
+  width: 20%;
+}
+.row .two {
+  width: 60%;
+  padding-left: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row .three {
+  width: 20%;
+  text-align: right;
+}
+
+.two h5 {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.two p {
+  color:rgb(175, 183, 193)
+}
+
+.row .avatar {
+  border-radius: 100px;
+  width: 80%;
+}
+.row .arrow {
+  width: 30%;
 }
