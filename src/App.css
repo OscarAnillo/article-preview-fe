@@ -92,4 +92,124 @@ img {
 }
 .row .arrow {
   width: 30%;
+  cursor: pointer;
+}
+
+.container {
+  background: hsl(217, 19%, 35%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: -4.5em;
+  width: 90%;
+  padding: 1.5em 0;
+  margin: auto;
+  border-radius: 0 0 10px 10px;
+}
+
+.container .share {
+  width: 30%;
+}
+
+.share h5 {
+  text-transform: uppercase;
+  color:rgb(175, 183, 193);
+  letter-spacing: 5px;
+  padding-left: 2.5em;
+}
+
+.container .icons {
+  width: 40%;
+}
+
+.icons img {
+  width: 20%;
+  margin-right: .8em;
+}
+
+.container .arrow {
+  width: 20%;
+}
+
+@media(min-width: 728px){
+  .container {
+    top: -6em;
+  }
+  .img-div {
+      height: 450px;
+  }
+  .container .share {
+    width: 25%;
+  }
+
+  .container .arrow {
+    width: 25%;
+  }
+  
+}
+
+@media (min-width: 1000px){
+  .wrapper-row {
+    display: flex;  
+    align-items: center;
+    width: 65%;
+    max-width: 1000px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .wrapper-row > div {
+    width: 100%;
+  }
+
+  .img-div {
+    width: 100%;
+    background-image: url("/public/images/drawers.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 310px;
+    border-radius: 10px 0px 0px 10px; 
+  }
+  .text-div-one { 
+    width: 100%;
+    border-radius: 0 10px 10px 0px;
+    height: 310px;
+  } 
+  .text-div-one p {
+    font-size: 13px;
+  }
+
+  .container {
+    width: 30%;
+    position: absolute;
+    top: 8em;
+    right: -70px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  
+  .container .share {
+    width: 50%;
+  }
+  
+  .share h5 {
+    padding: 0;
+  }
+  
+  .container .icons {
+    width: 50%;
+  }
+  
+  .icons img {
+    width: 20%;
+    
+  }
+  
+  .container .arrow {
+    display: none;
+  }
+
+
 }

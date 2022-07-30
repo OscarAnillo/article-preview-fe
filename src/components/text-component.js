@@ -1,4 +1,7 @@
-export default function TextComponent() {
+
+
+export default function TextComponent({ clickHandler }) {
+
   return (
     <div className="text-div-one">
       <div>
@@ -21,7 +24,7 @@ export default function TextComponent() {
             <p>28 Jun 2022</p>
           </div>
           <div className="three">
-            <img src="/images/icon-share.svg" alt="" className="arrow" />
+            <img src="/images/icon-share.svg" alt="" className="arrow" onClick={clickHandler}/>
           </div>
         </div>
       </div>
